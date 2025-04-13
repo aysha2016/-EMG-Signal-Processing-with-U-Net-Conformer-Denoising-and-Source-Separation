@@ -1,4 +1,4 @@
-# -EMG-Signal-Processing-with-U-Net-Conformer-Denoising-and-Source-Separation
+# EMG-Signal-Processing-with-U-Net-Conformer-Denoising-and-Source-Separation
 
  
   EMG U-Net + Conformer Model for Source Separation
