@@ -1,42 +1,45 @@
 # -EMG-Signal-Processing-with-U-Net-Conformer-Denoising-and-Source-Separation
 
-Readme Section Titles:
-Overview
+ 
+  EMG U-Net + Conformer Model for Source Separation
 
-A brief introduction to the project and its objectives.
+This repository contains a pipeline for processing EMG (Electromyography) data with a focus on denoising and source separation using a U-Net + Conformer model.
 
-Features
+## Steps Included:
 
-Key features of the repository (e.g., autoencoder for denoising, U-Net + Conformer for source separation).
+### 1. Mount Google Drive
+Mounts the user's Google Drive to access EMG data stored there.
 
-Requirements
+### 2. Load and Preprocess EMG Data
+Loads CSV files, normalizes the data using MinMaxScaler, and prepares the EMG data for training.
 
-List of dependencies and installation instructions.
+### 3. Autoencoder for Denoising
+Builds and trains an autoencoder model for denoising the EMG signals to improve the quality of the input data for the U-Net + Conformer model.
 
-Data Preprocessing
+### 4. U-Net + Conformer Model for Source Separation
+Combines a U-Net architecture with a Conformer block to improve the separation of sources from the EMG signals.
 
-Explanation of how EMG data is loaded, normalized, and prepared for training.
+### 5. Tracking Training with TensorBoard
+Integrates TensorBoard to monitor the training process of both models.
 
-Model Architecture
+### 6. Evaluation
+Uses standard metrics like Mean Squared Error (MSE) and R-squared to evaluate the model's performance.
 
-Details about the autoencoder model, U-Net, and Conformer blocks.
+### 7. Export to ONNX and TFLite
+Exports the trained model to both ONNX and TFLite formats, enabling deployment across different platforms.
 
-Training
+Additionally, the script includes options to download or move the model to Google Drive and integrates a simple TensorBoard setup to monitor the training process.
 
-Step-by-step guide on training the models, including TensorBoard integration.
+## How to Run
 
-Evaluation
+1. Upload your EMG data to Google Drive.
+2. Modify the `data_path` variable in the script to point to your EMG data directory.
+3. Run the script in a Colab notebook.
+4. Monitor the training process using TensorBoard.
+5. The trained model will be saved in both ONNX and TFLite formats.
 
-Metrics used to evaluate model performance (e.g., MSE, R2 score).
-
-Export Models
-
-Instructions for exporting the trained model to ONNX and TFLite formats for deployment.
-
-How to Use
-
-Example usage for running the models, including how to make predictions.
-
-Contributing
-
-Guidelines for contributing to the project.
+## Requirements
+- TensorFlow
+- tf2onnx
+- onnxruntime
+- Google Colab
