@@ -153,21 +153,6 @@ The preprocessing pipeline includes:
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+ 
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@software{emg_unet_conformer,
-  author = {Your Name},
-  title = {EMG UNet-Conformer: A Hybrid Deep Learning Model for EMG Signal Processing},
-  year = {2024},
-  publisher = {GitHub},
-  url = {https://github.com/yourusername/emg_unet_conformer}
-}
-``` 
+ 
