@@ -15,7 +15,7 @@ A hybrid deep learning model combining UNet and Conformer architectures for elec
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/emg_unet_conformer.git
+git clone https://github.com/aysha2016/emg_unet_conformer.git
 cd emg_unet_conformer
 ```
 
